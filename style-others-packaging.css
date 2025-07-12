@@ -1,0 +1,670 @@
+:root {
+    --ccblack: #181719;
+    --ccgreen: #d9dbd3;
+    --ccwhite: white;
+    --ccfont: "Bodoni Moda","Noto Sans", "sans-serif","Sacramento";
+    --ccfontsize: 20px;
+}
+
+body {
+    background-color:#d9dbd3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:"Noto Sans", sans-serif;
+    width: 100%;
+    min-height: 600vh;
+    overflow-x: hidden;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    width: 65%;
+    background-color:#d9dbd3;
+    color: var( --ccblack);
+}
+
+header {
+    top:0; 
+    border-bottom: 1px solid#d9dbd3;
+}
+
+main{
+    flex:1;
+    
+}
+footer {
+    bottom: 0;
+    border-top: 10px solid #d9dbd3;
+    justify-content: center;
+    padding: 40px;
+    font-size: calc(var(--ccwhite) * 0.7);
+}  
+
+h1 {
+    font-family:"Commissioner";
+    font-size: calc(var(--ccfontsize) * 1);
+    font-weight: 400;
+    color: var(--ccblack);
+    margin: 1%;
+    justify-self: flex-start;
+}
+
+nav {
+    width: 20%;
+}
+
+nav ul {
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    width: 70%;
+    height:60%;   
+}
+
+nav ul li {
+    list-style: none;
+    font-family:"Noto Sans", sans-serif;
+    font-size: calc(var(--ccfontsize) * 0.7); 
+    flex: auto;
+}  
+
+nav ul li:hover {
+    background-color:#d9dbd3;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding:10px;
+    color: var(--ccblack);
+}   
+
+main {
+    flex:0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+main #hero {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-bottom:0;
+    padding:0px;
+} 
+
+main #hero .fig {
+    margin:0;
+    width: 65%;
+    padding:1%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+main #hero .fig ul {
+    display:flex;
+    flex-direction:row;
+    width: 90%;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+
+main #hero .fig ul li {
+    list-style: none;
+    font-family:"Noto Sans", sans-serif;
+    font-size: calc(var(--ccfontsize) * 0.8); 
+    font-weight: 500;
+    flex:auto;
+    padding: 2px 4px;
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+}   
+
+main #hero .fig ul li a {
+    text-decoration:none;
+    padding:1px;
+    color: var(--ccblack);
+}   
+
+main .fig ul li:hover {
+    background-color:#d9dbd3;
+    cursor:pointer;
+}
+
+main .fig ul li:hover a {
+    color: var(--ccwhite);
+}
+
+main #hero > h2 {
+    font-family: var(--ccfont);
+    color: var(--ccblack);
+    font-size: calc(var(--ccfontsize) * 3.5);
+    font-weight: 100;
+    font-optical-sizing:auto;
+    font-style: normal;
+    line-height: calc(var(--ccfontsize) * 3.3);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main #hero > p {
+    font-family:"Noto Sans", sans-serif;
+    color: var(--batblack);
+    font-size: calc(var(--ccfontsize) *0.8);
+    font-weight: 400;
+    text-align: center;
+    line-height:30px;
+    margin: 0% 20% 1%;
+}
+
+main #featured {
+    background-color:#d9dbd3;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content:center;
+    margin-top:0px;
+    transition: all 0.3s;
+    gap:5px;
+
+}
+
+main #featured > div {
+    width:100%;
+    height:40vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
+}
+
+/* Christmas */
+main #featured > .pd-c1 {
+    background-image: url(images-pd/PD-C1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-c2 {
+    background-image: url(images-pd/PD-C2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+/* Halloween */
+main #featured > .pd-h1 {
+    background-image: url(images-pd/PD-H1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+main #featured > .pd-h2{
+    background-image: url(images-pd/PD-H2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+main #featured > .pd-h3 {
+    background-image: url(images-pd/PD-H3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-h4 {
+    background-image: url(images-pd/PD-H4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-h5 {
+    background-image: url(images-pd/Pd-H5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-h6{
+    background-image: url(images-pd/PD-H6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-h7 {
+    background-image: url(images-pd/PD-H7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+}   
+main #featured > .pd-h8 {
+    background-image: url(images-pd/PD-H8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-h9 {
+    background-image: url(images-pd/PD-H9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-h10 {
+    background-image: url(images-pd/PD-H10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-h11 {
+    background-image: url(images-pd/PD-H11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-h12 {
+    background-image: url(images-pd/PD-H12.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+/* Spring */
+main #featured > .pd-s1 {
+    background-image: url(images-pd/PD-S1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-s2 {
+    background-image: url(images-pd/PD-S2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-s3 {
+    background-image: url(images-pd/PD-S3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-s4 {
+    background-image: url(images-pd/PD-S4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-s7 {
+    background-image: url(images-pd/PD-S7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-s8 {
+    background-image: url(images-pd/PD-S8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-s9 {
+    background-image: url(images-pd/PD-S9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-s10 {
+    background-image: url(images-pd/PD-S10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-s11 {
+    background-image: url(images-pd/PD-S11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-s12 {
+    background-image: url(images-pd/PD-S12.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-s13 {
+    background-image: url(images-pd/PD-S13.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-s14 {
+    background-image: url(images-pd/PD-S14.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-s15 {
+    background-image: url(images-pd/PD-S15.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+main #featured > .pd-s16 {
+    background-image: url(images-pd/PD-S16.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+main #featured > .laser-cut {
+    background-image: url(images-pd/Laser-Cut.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+/* Autumn */
+main #featured > .pd-a1 {
+    background-image: url(images-pd/PD-A1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-a2 {
+    background-image: url(images-pd/PD-A2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+main #featured > .pd-a3 {
+    background-image: url(images-pd/PD-A3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+/* furniture */
+main #featured > .pd-f1 {
+    background-image: url(images-pd/PD-F1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-f2 {
+    background-image: url(images-pd/PD-F2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-f2b {
+    background-image: url(images-pd/PD-F2B.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+main #featured > .pd-f3 {
+    background-image: url(images-pd/PD-F3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-f4 {
+    background-image: url(images-pd/PD-F4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-f5 {
+    background-image: url(images-pd/PD-F5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-f6 {
+    background-image: url(images-pd/PD-F6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-f7 {
+    background-image: url(images-pd/PD-F7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-f8 {
+    background-image: url(images-pd/PD-F8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-f9 {
+    background-image: url(images-pd/PD-F9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-f10 {
+    background-image: url(images-pd/PD-F10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-f11 {
+    background-image: url(images-pd/PD-F11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-f12 {
+    background-image: url(images-pd/PD-F12.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-f13 {
+    background-image: url(images-pd/PD-F13.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-f14 {
+    background-image: url(images-pd/PD-F14.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+/* Infant */
+main #featured > .pd-in1 {
+    background-image: url(images-pd/PD-In1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-in2 {
+    background-image: url(images-pd/PD-In2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-in4 {
+    background-image: url(images-pd/PD-In4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-in5 {
+    background-image: url(images-pd/PD-In5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-in6 {
+    background-image: url(images-pd/PD-In6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+main #featured > .pd-in7 {
+    background-image: url(images-pd/PD-In7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+/* multizen */
+main #featured > .pd-m1 {
+    background-image: url(images-pd/PD-M1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+main #featured > .pd-m2 {
+    background-image: url(images-pd/PD-M2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+
+/*
+footer .contact> h3 {
+    font-family: var(--ccfont);
+    color: var(--ccblack);
+    font-size: calc(var(--ccfontsize) * 1.3);
+    font-weight: 100;
+    font-optical-sizing:auto;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 20px;
+} */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact > button {
+    font-family: "Noto Sans", sans-serif;  /* Fixed typo */
+    font-size: calc(var(--ccfontsize) * 0.7);
+    font-weight: 400;
+    background-color: var(--ccgreen);
+    border: 2.5px solid var(--ccblack);
+    padding: 8px 50px;
+    margin-top: 5px;
+    transition: all 0.3s ease;  /* Smooth hover/active effects */
+}
+.contact > button a {
+    color: var(--ccblack);
+    text-decoration: none;
+}
+.contact > button:hover {
+    background-color: #c8c9c1;  /* More noticeable hover color */
+    cursor: pointer;
+}
+
+.contact > button:active {
+    transform: scale(0.95);  /* Subtler click effect */
+}
+
+/*---- @MEDIA RULES ----*/
+
+
+@media (max-width: 1200px) {
+    :root {
+        --batfontsize: 16px;
+    }   
+
+    body {
+        min-height: 100vh; 
+    } 
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    nav {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-inline-start: 0;
+    }
+
+    nav ul li {
+        font-size: calc(var(--ccfontsize) * 0.65);
+    }
+
+    main #hero > h1 {
+        font-size: calc(var(--ccfontsize) * 0.9);
+    }
+    main #hero > h2 {
+        font-size: calc(var(--ccfontsize) * 2.3);
+        line-height: calc(var(--ccfontsize) * 2.5);
+        margin:1%;
+    }
+
+    main #hero > p {
+        font-size: calc(var(--ccfontsize) * 0.6);
+        margin: 1% 20%;
+        line-height:20px;
+    }
+
+/* figcaption */
+    .fig ul {
+        padding-inline-start: 0;
+    }
+    .fig ul li a{
+    font-size: calc(var(--ccfontsize) * 0.7); 
+    }
+
+/* main feature */
+    main #featured > div {
+    height:58vh;
+    }
+    
+    main #featured {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+
+@media (max-width: 960px) {
+    main #hero .fig ul {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width: 100%;
+}
+
+    .fig ul li a{
+    font-size: calc(var(--ccfontsize) * 0.65); 
+    }
+
+    main #featured > div {
+    height:38vh;
+    }
+}
+
+/* ///////// IMAGE LINKS ///////////////////*/
+/*
+.crossover1:hover, .crossover:hover, .bella:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+    box-shadow: 0px 5px 15px rgb(91, 91, 91);
+}
+
+*/
